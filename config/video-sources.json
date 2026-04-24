@@ -1,0 +1,18 @@
+{
+  "videoSources": [
+    {
+      "id": "douban",
+      "name": "豆瓣影视",
+      "type": "search",
+      "url": "https://movie.douban.com",
+      "enabled": true
+    },
+    {
+      "id": "bilibili", 
+      "name": "B站",
+      "type": "parse",
+      "url": "https://www.bilibili.com",
+      "enabled": true
+    }
+  ]
+}
