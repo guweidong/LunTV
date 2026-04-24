@@ -1,0 +1,70 @@
+#EXTM3U
+# 智能多通道自动选择直播源 - LunaTV Enhanced
+# 策略：每个频道提供多个源，播放器自动选择最佳
+# 更新时间：2026-04-24
+
+# ========== 中央台（多源配置） ==========
+
+# CCTV-1 综合（主源）
+#EXTINF:-1 tvg-id="CCTV1.cn" tvg-name="CCTV-1" tvg-logo="https://i.imgur.com/xxxxxx.png" group-title="央视",CCTV-1 综合
+http://cctv1.v.net/live/cctv1_2/index.m3u8
+
+# CCTV-1 综合（备用源1）
+#EXTINF:-1 tvg-id="CCTV1.cn" tvg-name="CCTV-1" group-title="央视",CCTV-1 综合（备用1）
+http://cctv1.cdn.com/live/cctv1.m3u8
+
+# CCTV-1 综合（备用源2）
+#EXTINF:-1 tvg-id="CCTV1.cn" tvg-name="CCTV-1" group-title="央视",CCTV-1 综合（备用2）
+http://cctv1.proxy.com/live/cctv1.m3u8
+
+# CCTV-5 体育（主源）
+#EXTINF:-1 tvg-id="CCTV5.cn" tvg-name="CCTV-5" tvg-logo="https://i.imgur.com/yyyyyy.png" group-title="央视",CCTV-5 体育
+http://cctv5.v.net/live/cctv5_2/index.m3u8
+
+# CCTV-5 体育（备用源）
+#EXTINF:-1 tvg-id="CCTV5.cn" tvg-name="CCTV-5" group-title="央视",CCTV-5 体育（备用）
+http://cctv5.cdn.com/live/cctv5.m3u8
+
+# CCTV-6 电影（主源）
+#EXTINF:-1 tvg-id="CCTV6.cn" tvg-name="CCTV-6" tvg-logo="https://i.imgur.com/zzzzzz.png" group-title="央视",CCTV-6 电影
+http://cctv6.v.net/live/cctv6_2/index.m3u8
+
+# CCTV-13 新闻（主源）
+#EXTINF:-1 tvg-id="CCTV13.cn" tvg-name="CCTV-13" group-title="央视",CCTV-13 新闻
+http://cctv13.v.net/live/cctv13_2/index.m3u8
+
+# ========== 凤凰台（多源配置） ==========
+
+# 凤凰卫视中文台（主源）
+#EXTINF:-1 tvg-id="PhoenixCN.cn" tvg-name="凤凰卫视中文台" tvg-logo="https://i.imgur.com/aaaaaa.png" group-title="凤凰",凤凰卫视中文台
+http://live.phoenixtv.com/live/phoenix.m3u8
+
+# 凤凰卫视中文台（备用源）
+#EXTINF:-1 tvg-id="PhoenixCN.cn" tvg-name="凤凰卫视中文台" group-title="凤凰",凤凰卫视中文台（备用）
+http://phoenix.cdn.com/live/phoenix.m3u8
+
+# 凤凰卫视资讯台
+#EXTINF:-1 tvg-id="PhoenixInfo.cn" tvg-name="凤凰卫视资讯台" group-title="凤凰",凤凰卫视资讯台
+http://live.phoenixtv.com/live/phoenixinfo.m3u8
+
+# ========== 苏州台（多源配置） ==========
+
+# 苏州新闻综合频道（官方源）
+#EXTINF:-1 tvg-id="Suzhou1.cn" tvg-name="苏州新闻综合" tvg-logo="https://i.imgur.com/bbbbbb.png" group-title="苏州",苏州新闻综合频道
+http://csztv.com/live/sztv1.m3u8
+
+# 苏州新闻综合频道（CDN源）
+#EXTINF:-1 tvg-id="Suzhou1.cn" tvg-name="苏州新闻综合" group-title="苏州",苏州新闻综合频道（CDN）
+http://cdn.suzhou.tv/live/sztv1/index.m3u8
+
+# 苏州社会经济频道（官方源）
+#EXTINF:-1 tvg-id="Suzhou2.cn" tvg-name="苏州社会经济" group-title="苏州",苏州社会经济频道
+http://csztv.com/live/sztv2.m3u8
+
+# 苏州社会经济频道（CDN源）
+#EXTINF:-1 tvg-id="Suzhou2.cn" tvg-name="苏州社会经济" group-title="苏州",苏州社会经济频道（CDN）
+http://cdn.suzhou.tv/live/sztv2/index.m3u8
+
+# 苏州生活资讯频道
+#EXTINF:-1 tvg-id="Suzhou5.cn" tvg-name="苏州生活资讯" group-title="苏州",苏州生活资讯频道
+http://csztv.com/live/sztv5.m3u8
