@@ -17,11 +17,11 @@ const siteConfig = {
 
   // ========== 站点基础配置 ==========
   site: {
-    url: process.env.SITE_BASE || 'https://lun-tv-eight.vercel.app',
+    url: process.env.SITE_BASE ||  'https://lun-tv-eight.vercel.app',
     name: process.env.NEXT_PUBLIC_SITE_NAME || 'LunaTV Enhanced',
     announcement: process.env.ANNOUNCEMENT || '欢迎使用 LunaTV Enhanced',
     timezone: 'Asia/Shanghai',
-    copyright: `© ${new Date().getFullYear()} LunaTV Enhanced`,
+    copyright: `©  LunaTV Enhanced`,
   },
 
   // ========== 功能配置 ==========
@@ -58,6 +58,16 @@ const siteConfig = {
       doubanProxyType: process.env.NEXT_PUBLIC_DOUBAN_PROXY_TYPE || 'cmliussss-cdn-tencent',
       doubanImageProxyType: process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'cmliussss-cdn-tencent',
     },
+  },
+
+  // ========== API 配置 ==========
+  api: {
+    enabled: true,
+    key: process.env.API_KEY || 'luna_7f3d9a2c5b8e1f4a6c9d0e2b5a8f3c1d',
+    liveSources: {
+      requireKey: true,
+      allowedOrigins: ['*']
+    }
   },
 
   // ========== UI/UX 配置 ==========
@@ -208,11 +218,12 @@ if (process.env.NODE_ENV === 'development') {
     for (const key of keys) {
       value = value[key];
       if (value === undefined) {
-        console.warn(`⚠️ 配置警告: ${field} 未定义`);
+        console.warn(`⚠️ 配置警告:  未定义`);
         break;
       }
     }
   });
 }
+
 
 
